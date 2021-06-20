@@ -1,0 +1,552 @@
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color: #000;
+    overflow-x: hidden;
+    background: #f8f9fa!important
+}
+*:focus {
+    outline: none;
+}
+.btn-light{
+    background: #f4f4f4!important;
+}
+.leftNavi{
+    position: relative;
+}
+h3{
+    font-size: 1.2em;
+}
+h3 span{
+    font-size: 0.7em;
+    color: #007bff;
+    font-weight: 600;
+}
+.verticalNavibarCloseBtn{
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.verticalNavibarCloseBtn a{
+    color: #000;
+    padding: 0px 13px;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 0 3px;
+    display: block;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    width: 25px;
+    height: 35px;
+    text-align: center;
+    right: -4px;
+}
+.verticalNavibarCloseBtn a::after{
+    content: '\f104';
+    font-family: fontawesome;
+    position: absolute;
+    top: 0px;
+    
+}
+.verticalNavibarCloseBtn.closed a::after{
+    transform: rotate(180deg);
+    transition: 1s;
+}
+/* .verticalNavibarCloseBtn a::before{
+    content: '';
+    border-left: solid 2px #000;
+    position: relative;
+    left: -13px;
+    height: 30px;
+    
+} */
+/* .leftNavi:hover::after{
+    content: "\f104"!important;
+    font-size: 28px;
+
+} */
+.verticalNavbar li{
+    position: relative;
+}
+.verticalNavbar li a{
+    color:#000;
+    padding: 10px 0;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.verticalNavbar li:hover a,.verticalNavbar li.active a{
+    padding-left: 10px;
+    color: #fff;
+    transition: 0.3s;
+}
+.verticalNavbar li ul{
+    margin: 0px ;
+    padding: 0px 15px;
+    background: #f4f4f4;
+ }
+.verticalNavbar li ul li{
+   list-style-type: none;
+}
+.verticalNavbar li ul li a{
+    font-size: 13px;
+    color: #6B6F82;
+    transition: 0.3s;
+ }
+.verticalNavbar li:hover ul li a,.verticalNavbar li.active ul li a{
+    padding-left: 0px;
+    color: #6B6F82;
+    background: #f4f4f4;
+ }
+ .verticalNavbar .dropdown-toggle::after,.navbar-nav .dropdown-toggle::after{
+     position: absolute;
+     right: 11px;
+     top:8px;
+     content: "\f105"!important;
+     border: none!important;
+     font-family: fontawesome;
+     transition: 0.3s;
+     color: #6B6F82;
+ }
+ .verticalNavbar li a:hover::after{
+    color: #fff;
+ }
+ .verticalNavbar a[aria-expanded="true"].dropdown-toggle::after,.navbar-nav a[aria-expanded="true"].dropdown-toggle::after{
+    content: "\f105"!important;
+    transition: 0.3s;
+    color: #fff;
+    transform: rotate(90deg);
+}
+.navbar-nav  .nav-link{
+    padding-right: 1.6em!important;
+}
+.navbar-nav  a[aria-expanded="true"].dropdown-toggle::after{
+    color: #000;
+}
+.verticalNavbar li:hover,.verticalNavbar li.active{
+    background: #007bff;
+    color: #fff;
+}
+.verticalNavbar li ul li a:hover, .verticalNavbar li ul li:hover, .verticalNavbar li ul li a.active{
+    background: #f4f4f4;
+    color: #000;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.verticalNavbar li a[aria-expanded="true"]{
+    background: #007bff;
+    padding-left: 6px;
+    color: #fff;
+}
+.fontAwesomeIcon::before{
+    font-family: FontAwesome;
+    position: absolute;
+    right: 18px;
+    top: 45px;
+    font-size: 1em;
+    color: #868686;
+}
+.loginSection .fontAwesomeIcon::before{
+    top: 11px;
+}
+.userID::before{
+    content:"\f007";
+}
+.loginPassword::before{
+    content:"\f023";
+}
+.calendar::before{
+    content:"\f073";
+}
+.cardNumber::before{
+    content:"\f2bc";
+}
+.loginButton{
+    min-height:50px;
+    line-height: 43px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.loginSection .form-control{
+    height: 50px!important;
+    line-height: 50px;
+}
+.form-control{
+    /* height: 60px!important;
+    line-height: 60px; */
+    box-shadow: 0 0 3px #eee;
+    background-image: none!important;
+    border-radius: 0.2rem;
+  /*   border: 1px solid #fff!important; */
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.loginSection input.form-control{
+    background: #f8f9fa!important;
+}
+.loginSection input:focus{
+    border-color: #f4f4f4!important;
+    background: #fff!important;
+    border-bottom: solid 2px #007bff!important;
+    box-shadow:none!important;
+}
+
+.font-weight-500{
+    font-weight: 500;
+}
+.card-header{
+    font-size: 16px;
+}
+.table thead th{
+    font-weight: 500;
+}
+
+/*.............Custom-Radio...............*/
+.form-check{
+    padding-left: 0px
+}
+.card-body .form-check-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+/* Hide the browser's default radio button */
+.form-check-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 19px;
+  width: 19px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.form-check.checkbox .checkmark,.form-check.checkbox  .checkmark:after{
+    border-radius:0%;
+}
+/* On mouse-over, add a grey background color */
+.form-check-label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.form-check-label input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+.form-check-label input:checked ~ .checkmark:after{
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.form-check-label .checkmark:after {
+ 	top:4px;
+	left:4px;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+.depositTable {
+    width:58%;
+    overflow-x: scroll;
+    margin-left:20%;
+    overflow-y: visible;
+    padding: 0;
+  }
+  .depositTable td{
+       border:none!important; 
+      white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .depositTable tr{
+      border-top:solid 1px #dee2e6!important;
+  }
+  .depositTable td.headcol{
+    border-bottom: solid 1px #dee2e6!important;
+}
+.depositTable th{
+    border-bottom:solid 1px #dee2e6!important;
+}
+  .headcol {
+    position: absolute;
+    width: 20%;
+    left: 0;
+    top: auto;
+    border-top-width: 2px!important;
+    margin-left: 9px;
+    margin-top: 0px;
+    border-bottom: solid 1px #dee2e6!important;
+  }
+  
+  .depositTable th.countTh,.depositTable th.cashTh{
+    position: absolute;
+    width: 14%;
+    right: 9%;
+    top: auto;
+    border-top-width: 1px;
+    top: 0px;
+    border-bottom: solid 1px #dee2e6!important;
+    text-align: center;
+}
+.depositTable th.cashTh{
+    right: 0%;
+}
+
+.depositTable td.cashTd,.depositTable td.countTd{
+    position: absolute;
+    width: 14%;
+    right: 0%;
+    top: auto;
+    border-top-width: 1px;
+    /*only relevant for first row*/
+    margin-top: 0px;
+    border-bottom: solid 1px #dee2e6!important;
+    text-align: center;
+}
+.depositTable td.countTd{
+    right: 9%;
+}
+.directExpressLogo img{
+    width: 300px;
+    height: auto;
+}
+.headcolSmall,.headcol{
+    font-weight: 500;
+    
+}
+@media (max-width:767px){
+    .depositTable {
+        width:80%;
+        overflow-x: scroll;
+        margin-right:0%;
+        margin-left:0%;
+        overflow-y: visible;
+        padding: 0;
+      }
+    .profileInfo{
+        position: absolute;
+        right: 69px;
+        top: 15px;
+        margin: 0px;
+    }
+    #verticalNavbarToggle{
+        position: absolute;
+        z-index: 99;
+        display: none;
+        top: 9%;
+    }
+    .collapse.show{
+        display: block!important;
+        opacity: 1!important;
+        transition: 1s;
+        animation: verticaleMenuMove 0.7s ;
+    }
+    @-webkit-keyframes verticaleMenuMove {
+        0%   {top: 8%; }
+        25% {top: 9%;}
+        100% {top: 9%;}
+      }
+    .navbar-toggler{
+        width: 38px;
+        height: 38px;
+        border-color: transparent;
+        /* padding: 15px 0; */
+        position: relative;
+        top: 3px;
+        left: 11px;
+    }
+    .navbar-toggler:focus {
+        outline: none;
+      }
+    .icon-bar{
+        background: #666;
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        position: absolute;
+        -webkit-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+    }
+   .icon-bar+.icon-bar {
+        margin-top: 3px;
+    }
+    .icon-bar:nth-child(2) {
+        top: 8px;
+    }
+    .navbar-toggler[aria-expanded=true] .icon-bar:nth-child(2){
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 16px;
+    }
+    .icon-bar:nth-child(3) {
+        top: 12px;
+    }
+    .navbar-default .navbar-toggler[aria-expanded=true] .icon-bar:nth-child(3){
+        opacity: 0;
+    }
+    .icon-bar:nth-child(4) {
+        top: 19px;
+    }
+    .navbar-default .navbar-toggler[aria-expanded=true] .icon-bar:nth-child(4){
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 13px;
+    }
+}
+
+@media (max-width:767px){
+   
+   #collapsibleNavbar{
+        position: absolute;
+        top: 2%;
+        /* background-color: #ccc!important; */
+        height:100%;
+        width:60%;
+        z-index:1;
+        left: 0%;
+        } 
+}
+.collapsedDropDown{
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+    left: 52px;
+}
+.verticalMenuDropDown:not(.viewInSmall) {
+    display: none;
+}
+
+.select-style {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 14px;
+    /* background: #fafafa url("img/icon-select.png") no-repeat 90% 50%; */
+}
+.select-style::after {
+    position: absolute;
+    right: 29px;
+    top:0px;
+    content: "\f107"!important;
+    border: none!important;
+    font-family: fontawesome;
+    color:#007bff;
+    font-size: 25px;
+    /* background: #fafafa url("img/icon-select.png") no-repeat 90% 50%; */
+}
+.select-style select {
+    padding: 5px 12px;
+    width: 100%;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    font-size: 1em;
+    border-radius: 1px;
+    border: solid 1px #fff;
+}
+.select-style select option{
+    font-size: 12px;
+}
+.select-style select:focus {
+    outline: none;
+}
+@media print
+{
+.noprint {display:none;}
+}
+
+.faReport,.faReportSmall{
+    margin-top: 47px;
+}
+.faReportCountCashHead,.faReportCountCashSmall{
+    display: flex;
+}
+.faReportCountCashHead li{
+    width: 50%;
+    height: 46px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    font-weight: 500;
+}
+.faReportCountCash,.faReportCountCashSmall{
+    margin-top: 1px;
+}
+.faReportCountCashSmall li{
+    border-top:1px solid #dee2e6;
+    height: 46px;
+    line-height: 46px;
+    font-size: 1em;
+    font-weight: normal;
+    width: 50%;
+}
+.faReport li,.faReportSmall li,.faReportCountCash li{
+    border-top:1px solid #dee2e6;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 1em;
+    font-size: 1em;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.faReport li{
+    font-weight: 500;
+}
+.faReportSmall{
+    margin: 0px;
+}
+.faReportSmall li{
+    padding: 0;
+    font-weight: 500;
+    border: none;
+  
+    display: inline-block;
+}
+.despositeLiabilityReport{
+    background-color: #ffffff;
+}
+#inlineCheckbox1{
+    padding-left: 0px; 
+     margin-bottom: 0px;
+}
+.table tbody td{
+    width: 20%;
+}
